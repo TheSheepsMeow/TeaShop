@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="SugarWorkers" sid="119835461014081" static="0" type="number">0</variable>
+        <variable constant="0" name="RainDrops" sid="187384205342212" static="0" type="number">0</variable>
+        <variable constant="0" name="TeaWorkers" sid="752162484373094" static="0" type="number">0</variable>
+        <event-block sid="180495125934846">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="647414646373273" type="RainDrop">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="309411599551705" type="RainDrop" />
+                <action id="-10" name="Add to" sid="905500067731150" type="System">
+                    <param id="0" name="Variable">RainDrops</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="957495884583769" type="Audio">
+                    <param id="0" name="Audio file">Blip-select 8</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="395691775549313" type="Player">
+                    <param id="0" name="Animation">&quot;RainHitsYou&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="556907451185011" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="4" name="Set animation" sid="406600101771132" type="Player">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="457284684165064">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="754302400278571" type="RainDrop">
+                    <param id="0" name="Object">SugarWorker</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="723795581202860" type="RainDrop" />
+                <action id="4" name="Set animation" sid="546660340769210" type="SugarWorker">
+                    <param id="0" name="Animation">&quot;HitByWater&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="794918554249950">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="419436420080697" type="RainDrop">
+                    <param id="0" name="Object">TeaWorker</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="264188226361813" type="RainDrop" />
+                <action id="4" name="Set animation" sid="876953841788412" type="TeaWorker">
+                    <param id="0" name="Animation">&quot;Happy&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="167997649784187">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="731102367013693" type="RainDrop2">
+                    <param id="0" name="Object">SugarWorker</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="421792790413611" type="RainDrop2" />
+                <action id="4" name="Set animation" sid="194736977079869" type="SugarWorker">
+                    <param id="0" name="Animation">&quot;HitByWater&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="209017086182535">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="793101929974633" type="RainDrop2">
+                    <param id="0" name="Object">TeaWorker</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="339506843363597" type="RainDrop2" />
+                <action id="4" name="Set animation" sid="588034270997162" type="TeaWorker">
+                    <param id="0" name="Animation">&quot;Happy&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="164411956265061">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="165751156683473" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="876042423592922" type="TeaWorkersText">
+                    <param id="0" name="Text">TeaWorkers</param>
+                </action>
+                <action id="0" name="Set text" sid="895901420030251" type="SugarWorkersText">
+                    <param id="0" name="Text">SugarWorkers</param>
+                </action>
+                <action id="0" name="Set text" sid="149981294307504" type="RainText">
+                    <param id="0" name="Text">RainDrops</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="884750889194958">
+            <conditions>
+                <condition id="0" name="On any touch start" sid="654220881775343" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="187380841212950" type="System">
+                    <param id="0" name="Object to create">Player</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">Touch.X</param>
+                    <param id="3" name="Y">Touch.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="678614689414931">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="537620492449261" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="485898068523392" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="160943442434186">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="548650851978990" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="928394108131976" type="Player">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y-40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="398782375998611">
+            <conditions>
+                <condition id="9" name="Compare acceleration" sid="388178896560388" type="Touch">
+                    <param id="0" name="Axis">0</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Acceleration">5</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="461080375251310" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="606266579395424" type="Player">
+                    <param id="0" name="Object">RainDrop2</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="810566764164977" type="RainDrop2">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="305018479319596" type="Player">
+                    <param id="0" name="Object">RainDrop2</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="792270297462274" type="RainDrop2">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="820554104475984">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="655175592785630" type="SugarWorker">
+                    <param id="0" name="Object">Work</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="335773548489198" type="SugarWorker">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="214088159172040" type="System">
+                    <param id="0" name="Variable">SugarWorkers</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="196857734446992">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="314108302310484" type="TeaWorker">
+                    <param id="0" name="Object">Work</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="446981765863116" type="TeaWorker">
+                    <param id="0" name="Animation">&quot;Happy&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="680551316988033" type="System">
+                    <param id="0" name="Variable">TeaWorkers</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="119453307037621">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="417183299482790" type="SugarWorker">
+                    <param id="0" name="Object">Work</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="828529285540247" type="SugarWorker">
+                    <param id="0" name="Animation">&quot;HitByWater&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="236481524541543" type="System">
+                    <param id="0" name="Variable">SugarWorkers</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="188886877158916">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="847269909492443" type="TeaWorker">
+                    <param id="0" name="Object">Work</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="880788542769875" type="TeaWorker">
+                    <param id="0" name="Animation">&quot;Sad&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="360210794193886" type="System">
+                    <param id="0" name="Variable">TeaWorkers</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="259366125154534">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="331161697701299" type="System">
+                    <param id="0" name="Interval (seconds)">random(0.5, 1)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="814955835934493" type="System">
+                    <param id="0" name="Object to create">RainDrop</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="X">random(10, 300)</param>
+                    <param id="3" name="Y">-50</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="993620843863770" type="RainDrop">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="514683058290892">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="639804498907652" type="System">
+                    <param id="0" name="Interval (seconds)">random(2,8)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="951552678031077" type="System">
+                    <param id="0" name="Object to create">SugarWorker</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="X">363</param>
+                    <param id="3" name="Y">389</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="979161060171136">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="176597671701485" type="System">
+                    <param id="0" name="Interval (seconds)">random(4,9)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="781574351435504" type="System">
+                    <param id="0" name="Object to create">TeaWorker</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="X">373</param>
+                    <param id="3" name="Y">376</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="249879499692684">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="909396232105179" type="System">
+                    <param id="0" name="Variable">TeaWorkers</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="182039575287533" type="System">
+                    <param id="0" name="Variable">TeaWorkers</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="190329208304553">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="936424876789181" type="System">
+                    <param id="0" name="Variable">SugarWorkers</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="397544819750757" type="System">
+                    <param id="0" name="Variable">SugarWorkers</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

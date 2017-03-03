@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1q6yf0a9oz1ef</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>320</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Player" sid="728157133694727">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="130389481538369" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="-0.192" y="0.6" />
+                        <image-point name="Imagepoint 2" x="1.228" y="0.62" />
+                        <collision-poly>
+                            <point x="0.068" y="0.196" />
+                            <point x="0.5" y="0" />
+                            <point x="0.852" y="0.148" />
+                            <point x="1" y="0.42" />
+                            <point x="0.588" y="0.432" />
+                            <point x="0.416" y="0.432" />
+                            <point x="0" y="0.452" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="RainHitsYou" pingpong="0" repeatcount="1" repeatto="0" sid="711877266644682" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.068" y="0.196" />
+                            <point x="0.5" y="0" />
+                            <point x="0.852" y="0.148" />
+                            <point x="1" y="0.42" />
+                            <point x="0.588" y="0.432" />
+                            <point x="0.416" y="0.432" />
+                            <point x="0" y="0.452" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Table" sid="893366314791268">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="190948748040283">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="320343570763412" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RainDrop" sid="144903214782628">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="950768872316740">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="942461891965433" speed="5">
+                    <frame duration="1" hotspotX="0.468531" hotspotY="0.530435" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BG" sid="738415808591024">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="335999651635873" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="872837447712662">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Touch" sid="190901947424410">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="SugarWorker" sid="771197989639424">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="924861123026714">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="599635660685313" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="HitByWater" pingpong="0" repeatcount="1" repeatto="0" sid="320215111360228" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Work" sid="510834543911717">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="761805800073992" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TeaWorkersText" sid="469474186818100">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="TeaWorker" sid="518288044620461">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="970965538382105">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Sad" pingpong="0" repeatcount="1" repeatto="0" sid="637388019950991" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\macadmin\Desktop\SadTea.png">
+                        <collision-poly>
+                            <point x="0.12" y="0.12" />
+                            <point x="0.5" y="0.028" />
+                            <point x="0.872" y="0.128" />
+                            <point x="1" y="0.5" />
+                            <point x="0.78" y="0.78" />
+                            <point x="0.5" y="0.972" />
+                            <point x="0.216" y="0.784" />
+                            <point x="0.048" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Happy" pingpong="0" repeatcount="1" repeatto="0" sid="467624406327844" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\macadmin\Desktop\HappyTea.png">
+                        <collision-poly>
+                            <point x="0.12" y="0.12" />
+                            <point x="0.5" y="0.028" />
+                            <point x="0.872" y="0.128" />
+                            <point x="1" y="0.5" />
+                            <point x="0.78" y="0.78" />
+                            <point x="0.5" y="0.772" />
+                            <point x="0.216" y="0.784" />
+                            <point x="0.048" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="128029728709914">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="RainDrop2" sid="736922195192203">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="528566646639081">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="472234012450814" speed="5">
+                    <frame duration="1" hotspotX="0.468531" hotspotY="0.530435" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SugarWorkersText" sid="349135771426768">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="TeaUI" sid="455046080032462">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="883224547548209" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SugarUI" sid="529678509817925">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="375458183482475" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RainUI" sid="969228393139802">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="712352231898878" speed="5">
+                    <frame duration="1" hotspotX="0.874126" hotspotY="0.543478" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RainText" sid="591548568421082">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="3" />
+        <global-instance type="Touch" uid="4">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="8">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Blip-select 8.m4a" />
+        <file name="Blip-select 8.ogg" />
+        <file name="HappySugar.m4a" />
+        <file name="HappySugar.ogg" />
+        <file name="HappyTea.m4a" />
+        <file name="HappyTea.ogg" />
+        <file name="SadSugar.m4a" />
+        <file name="SadSugar.ogg" />
+        <file name="SadTea.m4a" />
+        <file name="SadTea.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
