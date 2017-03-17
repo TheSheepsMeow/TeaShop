@@ -102,6 +102,96 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="8" loop="0" name="Shake" pingpong="0" repeatcount="1" repeatto="0" sid="874446504830062" speed="12">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.835821" original-source="C:\Users\Josiah\Desktop\Internship\TeaShop\ART\Umbrella_Shake.png">
+                        <collision-poly>
+                            <point x="0" y="0.0475766" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0.0373431" />
+                            <point x="1" y="0.356971" />
+                            <point x="0" y="0.291696" />
+                            <point x="0" y="0.286851" />
+                            <point x="0" y="0.346835" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.495868" hotspotY="0.835821">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.314275" />
+                            <point x="0" y="0.229516" />
+                            <point x="0" y="0.223225" />
+                            <point x="0" y="0.301113" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.835821">
+                        <collision-poly>
+                            <point x="0" y="0.0475766" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0.0373431" />
+                            <point x="1" y="0.356971" />
+                            <point x="0" y="0.291696" />
+                            <point x="0" y="0.286851" />
+                            <point x="0" y="0.346835" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.496241" hotspotY="0.835821" original-source="C:\Users\Josiah\Desktop\Internship\TeaShop\ART\Umbrella_Shake.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.314275" />
+                            <point x="0" y="0.229516" />
+                            <point x="0" y="0.223225" />
+                            <point x="0" y="0.301113" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.496124" hotspotY="0.835821">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.251373" />
+                            <point x="0" y="0.141311" />
+                            <point x="0" y="0.133143" />
+                            <point x="0" y="0.234282" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.835821">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.169693" />
+                            <point x="0" y="0.0267776" />
+                            <point x="0" y="0.0161704" />
+                            <point x="0" y="0.1475" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.496124" hotspotY="0.835821">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.251373" />
+                            <point x="0" y="0.141311" />
+                            <point x="0" y="0.133143" />
+                            <point x="0" y="0.234282" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.496241" hotspotY="0.835821">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.314275" />
+                            <point x="0" y="0.229516" />
+                            <point x="0" y="0.223225" />
+                            <point x="0" y="0.301113" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Table" sid="893366314791268">
