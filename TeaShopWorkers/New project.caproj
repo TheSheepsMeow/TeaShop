@@ -205,12 +205,12 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="320343570763412" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Josiah\Desktop\Internship\TeaShop\ART\Table.png">
                         <collision-poly>
-                            <point x="0" y="0.201389" />
-                            <point x="1" y="0.203704" />
-                            <point x="1" y="0.314815" />
-                            <point x="0.558824" y="0.331019" />
-                            <point x="0.434641" y="0.331019" />
-                            <point x="0" y="0.30787" />
+                            <point x="7.21775e-009" y="0.563762" />
+                            <point x="1" y="0.563552" />
+                            <point x="1" y="0.674663" />
+                            <point x="0.56536" y="0.679503" />
+                            <point x="0.441177" y="0.679503" />
+                            <point x="7.21775e-009" y="0.670243" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -622,7 +622,7 @@
         </object-type>
         <object-type name="Background" sid="500662011365519">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\Josiah\Desktop\Internship\TeaShop\ART\BG_Color.png" />
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\TeaShop\ART\TeaShop_BGblur.png" />
         </object-type>
         <object-type name="Door" sid="680166104341767">
             <plugin id="Sprite" />
@@ -648,6 +648,14 @@
         <object-type name="LoseParticle" sid="611550386366038">
             <plugin id="Particles" />
             <texture />
+        </object-type>
+        <object-type name="BG2" sid="499111178171644">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248290699595451" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
