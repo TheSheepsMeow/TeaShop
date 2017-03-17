@@ -238,33 +238,50 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="398782375998611">
+        <event-block any="1" sid="398782375998611">
             <conditions>
                 <condition id="9" name="Compare acceleration" sid="388178896560388" type="Touch">
-                    <param id="0" name="Axis">0</param>
+                    <param id="0" name="Axis">3</param>
                     <param id="1" name="Comparison">5</param>
                     <param id="2" name="Acceleration">5</param>
                 </condition>
-                <condition id="-4" name="Trigger once while true" sid="461080375251310" type="System" />
+                <condition id="9" name="Compare acceleration" sid="150690075972539" type="Touch">
+                    <param id="0" name="Axis">4</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Acceleration">5</param>
+                </condition>
+                <condition id="9" name="Compare acceleration" sid="352192230594248" type="Touch">
+                    <param id="0" name="Axis">5</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Acceleration">5</param>
+                </condition>
             </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="606266579395424" type="Player">
-                    <param id="0" name="Object">RainDrop2</param>
-                    <param id="1" name="Layer">&quot;Game&quot;</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="810566764164977" type="RainDrop2">
-                    <param id="0" name="Angle">90</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="305018479319596" type="Player">
-                    <param id="0" name="Object">RainDrop2</param>
-                    <param id="1" name="Layer">&quot;Game&quot;</param>
-                    <param id="2" name="Image point">2</param>
-                </action>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="792270297462274" type="RainDrop2">
-                    <param id="0" name="Angle">90</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="212951783153299">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="461080375251310" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="606266579395424" type="Player">
+                            <param id="0" name="Object">RainDrop2</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="810566764164977" type="RainDrop2">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="305018479319596" type="Player">
+                            <param id="0" name="Object">RainDrop2</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="792270297462274" type="RainDrop2">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="820554104475984">
             <conditions>
